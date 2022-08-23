@@ -79,13 +79,13 @@ To add the SDK as a dependency to your project, you have two options: Using Coco
 #### Using CocoaPods
 1. Add `source 'https://github.com/bitmovin/cocoapod-specs.git'` to your Podfile.
 1. Run `pod repo update` to add the newly added source.
-1. Add `pod 'BitmovinPlayer', '3.21.0'` to your Podfile.
+1. Add `pod 'BitmovinPlayer', '3.25.0'` to your Podfile.
 1. Install the pod using `pod install`.
 
 See the `Podfile` of this repository for a full example.
 
 #### Adding the SDK Directly
-When using Xcode, go to the `General` page or your app target and add the SDK bundle (`BitmovinPlayer.xcframework`) under `Linked Frameworks and Libraries`. The latest SDK for iOS and tvOS can be downloaded [here](https://cdn.bitmovin.com/player/ios_tvos/3.21.0/BitmovinPlayer.zip).
+When using Xcode, go to the `General` page or your app target and add the SDK bundle (`BitmovinPlayer.xcframework`) under `Linked Frameworks and Libraries`. The latest SDK for iOS and tvOS can be downloaded [here](https://cdn.bitmovin.com/player/ios_tvos/3.25.0/BitmovinPlayer.zip).
 
 #### Prepare your Bitmovin Player license
 
@@ -104,8 +104,8 @@ When using Xcode, go to the `General` page or your app target and add the SDK bu
 - The `NSBluetoothAlwaysUsageDescription` key is set in the `info.plist`
 
 ## Documentation And Release Notes
--   You can find the latest API documentation [here](https://bitmovin.com/ios-sdk-documentation/).
--   The release notes can be found [here](https://bitmovin.com/release-notes-ios-sdk/).
+-   You can find the latest API documentation [here](https://bitmovin.com/docs/player/api-reference/ios/ios-sdk-api-reference-v3#/player/ios/3/docs/index.html).
+-   The release notes can be found [here](https://bitmovin.com/docs/player/releases/ios).
 
 ## Support
 If you have any questions or issues with this SDK or its examples, or you require other technical support for our services, please login to your Bitmovin Dashboard at https://bitmovin.com/dashboard and [create a new support case](https://bitmovin.com/dashboard/support/cases/create). Our team will get back to you as soon as possible :+1:
