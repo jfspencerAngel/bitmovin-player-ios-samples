@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BA219DF28B56DD50071FB45 /* BitmovinPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = 0BA219DE28B56DD50071FB45 /* BitmovinPlayer */; };
 		8469A387B0E64E189AD78F04 /* Pods_BasicAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B826631924D953E39F1A8C6 /* Pods_BasicAds.framework */; };
 		AC6F03031F7E6D38004B1816 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6F03021F7E6D38004B1816 /* AppDelegate.swift */; };
 		AC6F03051F7E6D38004B1816 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6F03041F7E6D38004B1816 /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8469A387B0E64E189AD78F04 /* Pods_BasicAds.framework in Frameworks */,
+				0BA219DF28B56DD50071FB45 /* BitmovinPlayer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +111,9 @@
 			dependencies = (
 			);
 			name = BasicAds;
+			packageProductDependencies = (
+				0BA219DE28B56DD50071FB45 /* BitmovinPlayer */,
+			);
 			productName = BasicAds;
 			productReference = AC6F02FF1F7E6D38004B1816 /* BasicAds.app */;
 			productType = "com.apple.product-type.application";
@@ -139,6 +144,9 @@
 				Base,
 			);
 			mainGroup = AC6F02F61F7E6D38004B1816;
+			packageReferences = (
+				0BA219DD28B56DD50071FB45 /* XCRemoteSwiftPackageReference "player-ios" */,
+			);
 			productRefGroup = AC6F03001F7E6D38004B1816 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -342,7 +350,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.2;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -357,8 +366,11 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BasicAds/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bitmovin.player.samples.ads.basic-$(DEVELOPMENT_TEAM)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.angel.mobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -374,8 +386,11 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BasicAds/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bitmovin.player.samples.ads.basic-$(DEVELOPMENT_TEAM)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.angel.mobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -404,6 +419,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0BA219DD28B56DD50071FB45 /* XCRemoteSwiftPackageReference "player-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bitmovin/player-ios.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0BA219DE28B56DD50071FB45 /* BitmovinPlayer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0BA219DD28B56DD50071FB45 /* XCRemoteSwiftPackageReference "player-ios" */;
+			productName = BitmovinPlayer;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		AC6F03091F7E6D38004B1816 /* BasicAds.xcdatamodeld */ = {
