@@ -46,7 +46,6 @@ final class ViewController: UIViewController {
 
         // Create player based on player configuration
         player = PlayerFactory.create(playerConfig: config)
-
         // Create player view and pass the player instance to it
         let playerView = PlayerView(player: player, frame: .zero)
 
@@ -55,7 +54,8 @@ final class ViewController: UIViewController {
 
         playerView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
         playerView.frame = playerContainerView.bounds
-
+        playerView.isUserInteractionEnabled = false
+        player.config.styleConfig.isUiEnabled = false
         playerContainerView.addSubview(playerView)
         playerContainerView.bringSubviewToFront(playerView)
 
