@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/bitmovin/player-ios.git",
       "state" : {
-        "revision" : "4d0adbfb34d04b831477d78173b9c1fcda770b2a",
-        "version" : "3.25.0"
+        "revision" : "8bee9383f6d858fbc9c8f705d7d6e73711dcf91b",
+        "version" : "3.27.0"
       }
     }
   ],
